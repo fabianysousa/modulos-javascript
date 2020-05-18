@@ -1,5 +1,7 @@
 console.log('Hello! World');
 
+// Comandos de decisão
+
 var a = 7;
 var b = 7;
 
@@ -19,7 +21,7 @@ else if (a < b) console.log(a + ' é menor que ' + b);
 else console.log(a + ' é igual a ' + b);
 */
 
-var r = '';
+var dia = 5;
 // prettier-ignore
 switch (dia) {
   case 1: r = 'Domingo'; break;
@@ -32,3 +34,24 @@ switch (dia) {
 
   default: r = 'Dia invalido';
 }
+console.log(r);
+
+// Operador ternário
+
+var a = 6;
+var b = 7;
+
+var resposta = a > b ? 'maior' : a < b ? 'menor' : 'igual';
+console.log(resposta);
+
+/*
+if (a > b) {
+  console.log(a + ' é maior que ' + b);
+} else {
+  if (a < b) {
+    console.log(a + ' é menor que ' + b);
+  } else {
+    console.log(a + ' é igual a ' + b);
+  }
+}
+*/
