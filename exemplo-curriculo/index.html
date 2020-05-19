@@ -1,66 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Currículo - Fabiany Sousa</title>
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Curriculo</title>
   </head>
+
   <body>
     <h1>Fabiany Sousa</h1>
 
-    <div class="dados-pessoais">
-      <img
-        class="imagem-perfil"
-        src="./img/perfil.jpg"
-        alt="Fabiany de Sousa"
-      />
-      <ul>
-        <li>fabianydesousa@gmail.com</li>
-        <li>21 anos</li>
-        <li>Rua x numero Y</li>
-        <li><spam class="city">Fortaleza</spam> - CE</li>
-      </ul>
+    <div>
+      <h2>Dados pessoais</h2>
+      <div class="personal-data">
+        <img src="./img/perfil.jpg" alt="Fabiany Sousa" />
+        <ul>
+          <li class="personal-data">Brasileira, 21 anos</li>
+          <li class="personal-data">Rua X, número Y</li>
+          <li class="personal-data">Bairro Z</li>
+          <li id="city" class="personal-data">Quixadá, CE</li>
+          <li class="personal-data">(99) 99999-9999</li>
+          <li class="personal-data">
+            <!-- prettier-ignore -->
+            <a href="https://www.linkedin.com/in/fabiany-sousa/" target="_blank">
+              Linkedin
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <p>Entusiasta por <strong>desenvolvimento web</strong></p>
+    <div>
+      <h2>Tecnologias</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tecnologia</th>
+            <th>Experiência</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>JavaScript</td>
+            <td>Aprendiz</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>Aprendiz</td>
+          </tr>
+          <tr>
+            <td>Node</td>
+            <td>Aprendiz</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <table>
-      <tr>
-        <th>Tecnologias</th>
-        <th>Experiências</th>
-      </tr>
-      <tr>
-        <td>HTML</td>
-        <td>Aprendiz</td>
-      </tr>
-
-      <tr>
-        <td>CSS</td>
-        <td>Aprendiz</td>
-      </tr>
-      <tr>
-        <td>JavaScript</td>
-        <td>Aprendiz</td>
-      </tr>
-      <tr>
-        <td>React</td>
-        <td>Aprendiz</td>
-      </tr>
-      <tr>
-        <td>Node</td>
-        <td>Aprendiz</td>
-      </tr>
-    </table>
-
-    <p>
-      <a href="https://www.linkedin.com/in/fabiany-sousa/" target="_blank"
-        >Linkedin</a
-      >
-      <a href="https://github.com/fabianysousa" target="_blank">Github</a>
-      <a href="https://sourcerer.io/fabianysousa" target="_blank">Sourcer</a>
-    </p>
+    <div>
+      <h4>Interesses:</h4>
+      <ul>
+        <li>Desenvolvimento Front End</li>
+        <li>Desenvolvimento Full Stack</li>
+        <li>Desenvolvimento Mobile</li>
+        <li>Gerenciamento de Projetos</li>
+        <li>Ux</li>
+      </ul>
+    </div>
 
     <script src="./js/script.js"></script>
   </body>
