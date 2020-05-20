@@ -24,13 +24,3 @@ console.log(sum3(2, 3));
 console.log(sum4(2, 3));
 
 // arrow function só pode usar com apenas um comando
-
-// template literals
-
-const name = 'Fabiany';
-const surName = 'Sousa';
-const text1 = 'Meu nome é ' + name + ' ' + surName;
-const text2 = 'Meu nome é  $(name)  $(surName)';
-
-console.log(text1);
-console.log(text2);
