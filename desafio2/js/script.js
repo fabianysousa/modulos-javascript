@@ -51,5 +51,18 @@ async function fetchCountries() {
       flag,
     };
   });
-  console.log(allCountries);
+
+  render();
 }
+
+function render() {
+  renderCountryList();
+  renderFavorites();
+  renderSummary();
+  handleCountryButtons();
+}
+
+function renderCountryList() {}
+function renderFavorites() {}
+function renderSummary() {}
+function handleCountryButtons() {}
