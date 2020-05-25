@@ -19,11 +19,37 @@ window.addEventListener('load', () => {
   countFavorites = document.querySelector('#countFavorites');
 
   totalPopulationList = document.querySelector('#totalPopulationList');
-  // prettier-ignore
-  totalPopulationFavorites = document.querySelector('#totalPopulationFavorites');
+  totalPopulationFavorites = document.querySelector(
+    '#totalPopulationFavorites'
+  );
   numberFormat = Intl.NumberFormat('pt-BR');
 
   fetchCountries();
 });
 
-function fetchCountries() {}
+/*
+function fetchCountries() {
+  fetch('https://restcountries.eu/rest/v2/all')
+    .then((res) => res.json())
+    .then((json) => {
+      allCountries = json;
+      console.log(allCountries);
+    });
+}
+*/
+
+async function fetchCountries() {
+  const res = await fetch('https://restcountries.eu/rest/v2/all');
+  const json = await res.json();
+  allCountries = json.map((country) => {
+    const { id: numericCode, translations, population, flag } = country;
+
+    return {
+      id: numericCode,
+      name: translations.pt,
+      population,
+      flag,
+    };
+  });
+  console.log(allCountries);
+}
