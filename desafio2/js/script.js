@@ -133,4 +133,17 @@ function renderSummary() {
   totalPopulation.textContent = totalPopulation;
   totalPopulationFavorites.textContent = totalFavorites;
 }
-function handleCountryButtons() {}
+function handleCountryButtons() {
+  const countryButtons = Array.from(tabCountries.querySelectorAll('.btn'));
+  const favoriteButtons = Array.from(tabFavorites.querySelectorAll('.btn'));
+
+  countryButtons.forEach((button) => {
+    button.addEventListener('click', () => addToFavorites(button.id));
+  });
+  countryButtons.forEach((button) => {
+    button.addEventListener('click', () => removeFromFavorites(button.id));
+  });
+  function addToFavorites(id) {}
+
+  function removeFromFavorites(id) {}
+}
