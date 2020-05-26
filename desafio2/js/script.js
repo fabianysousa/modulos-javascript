@@ -119,5 +119,18 @@ function renderFavorites() {
   tabFavorites.innerHTML = favoritesHTML;
 }
 
-function renderSummary() {}
+function renderSummary() {
+  countCountries.textContent = allCountries.length;
+  countFavorites.textContent = favoriteCountries.length;
+
+  const totalPopulation = allCountries.reduce((accumulator, current) => {
+    return accumulator + current.population;
+  }, 0);
+  const totalFavorites = allCountries.reduce((accumulator, current) => {
+    return accumulator + current.population;
+  }, 0);
+
+  totalPopulation.textContent = totalPopulation;
+  totalPopulationFavorites.textContent = totalFavorites;
+}
 function handleCountryButtons() {}
