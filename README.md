@@ -4,7 +4,7 @@
 
 ## 📑 Sobre
 
-Modulos JavaScripy trata-se de um repositório com a reprodução  dos exemplos utilizados dentro do **Bootcamp FullStack** do **Instituto de Gestão e Tecnologia da Informação** a fim de colocar em prática o conteúdo de JavaScript ensinado ao decorrer do curso.
+Modulos JavaScript trata-se de um repositório com a reprodução  dos exemplos utilizados dentro do **Bootcamp FullStack** do **Instituto de Gestão e Tecnologia da Informação** a fim de colocar em prática o conteúdo de JavaScript ensinado ao decorrer do curso.
 
 ---
 
